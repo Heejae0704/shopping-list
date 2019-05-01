@@ -30,7 +30,6 @@ function markCheck(){
 
 function deleteItem(){
     $(".shopping-list").on("click", ".shopping-item-delete", function(e){
-        console.log("click-captured!")
         e.stopPropagation();
         $(this).closest("li").remove();
     })
